@@ -2,16 +2,26 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
-Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
+Plug 'elixir-lang/vim-elixir'
+Plug 'elzr/vim-json'
+Plug 'scrooloose/nerdtree'
+Plug 'w0rp/ale'
 Plug 'duff/vim-scratch'
 Plug 'lifepillar/vim-solarized8'
 call plug#end()
 " End vimplug
 "
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 set background=dark
+set t_Co=256
 colorscheme solarized8
 
 set nocompatible              " be iMproved, required
@@ -27,9 +37,6 @@ set ttyfast
 set mouse=a
 set number            " Enable line numbers
 set clipboard=unnamed " Use system clipboard
-if (has("termguicolors"))
-  set termguicolors
-endif
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
