@@ -1,6 +1,6 @@
 #!/bin/bash
-dotfiles="$HOME/dotfiles"
-files="gitconfig gitignore tmux.conf vimrc zshenv zshrc"
+dotfiles="$HOME/.dotfiles"
+files="gitconfig gitignore tmux.conf vimrc zprofile zshenv zshrc"
 
 for file in $files; do
   rm $HOME/.$file
