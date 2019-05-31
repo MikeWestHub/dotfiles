@@ -1,0 +1,13 @@
+[user]
+	name = Mike West
+	email = westmd23@gmail.com
+[core]
+	excludesfile = ~/.gitignore 
+	editor = vim
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[push]
+	default = matching
