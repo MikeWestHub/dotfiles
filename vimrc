@@ -9,13 +9,11 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'elixir-lang/vim-elixir'
 Plug 'elzr/vim-json'
 Plug 'jiangmiao/auto-pairs'
-Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 Plug 'duff/vim-scratch'
 Plug 'lifepillar/vim-solarized8'
 call plug#end()
 " End vimplug
-"
 
 if (has("termguicolors"))
   set termguicolors
@@ -37,21 +35,11 @@ filetype plugin on    " Enable filetype-specific plugins
 set ttyfast
 set mouse=a
 set number            " Enable line numbers
-set clipboard=unnamed " Use system clipboard
 
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 noremap <tab> <c-w><c-w>
 nmap <silent> <C-N> :cn<CR>zv
 nmap <silent> <C-P> :cp<CR>zv
-" The Silver Searcher
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-  " bind \ (backward slash) to grep shortcut
-  command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-  nnoremap \ :Ag<SPACE>
-endif
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " Rainbow colors!
