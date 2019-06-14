@@ -35,6 +35,7 @@ filetype plugin on    " Enable filetype-specific plugins
 set ttyfast
 set mouse=a
 set number            " Enable line numbers
+set clipboard=unnamed
 
 autocmd StdinReadPre * let s:std_in=1
 noremap <tab> <c-w><c-w>
