@@ -1,13 +1,23 @@
 [user]
 	name = Mike West
-	email = westmd23@gmail.com
+	email = mwest@recurly.com
 [core]
 	excludesfile = ~/.gitignore 
 	editor = vim
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[pull]
+  rebase = true
 [push]
 	default = matching
+[rerere]
+  enabled = true
+[fetch]
+  prune = true
+[merge]
+  ff = only
+[diff "sopsdiffer"]
+  textconv = sops -d

@@ -1,5 +1,5 @@
 #!/bin/bash
-dotfiles="$HOME/.dotfiles"
+dotfiles="$HOME/dotfiles"
 files="gitconfig gitignore tmux.conf vimrc zprofile zshenv zshrc"
 
 for file in $files; do

@@ -5,3 +5,5 @@
 .tags
 tags
 **/puma.rb
+.zshenv
+zshenv

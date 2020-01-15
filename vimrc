@@ -11,7 +11,6 @@ Plug 'elzr/vim-json'
 Plug 'jiangmiao/auto-pairs'
 Plug 'w0rp/ale'
 Plug 'duff/vim-scratch'
-Plug 'lifepillar/vim-solarized8'
 call plug#end()
 " End vimplug
 
@@ -21,7 +20,7 @@ endif
 
 set background=dark
 set t_Co=256
-colorscheme solarized8
+colorscheme desert
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
