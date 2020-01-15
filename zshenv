@@ -1,5 +1,7 @@
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
+# This file is not symlinked to avoid exposing sensitive info
+
+# General
+export PATH="$PATH:/usr/local/bin"
 
 DEFAULT_USER=`whoami`
 
@@ -7,4 +9,6 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 export TERM=xterm-256color
 
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+# rbenv
+# export PATH=$HOME/.rbenv/bin:$PATH
+# eval "$(rbenv init -)"
