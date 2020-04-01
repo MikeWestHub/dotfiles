@@ -40,7 +40,7 @@ set list listchars=tab:\ \ ,trail:·,nbsp:·
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set backspace=indent,eol,start
-set smartindent expandtab
+set smartindent expandtab tabstop=2 shiftwidth=2
 set ruler
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
